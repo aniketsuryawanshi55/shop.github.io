@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aniket Laundry - Reliable and professional laundry services with quick delivery and pick-up options.">
+    <title>Aniket Laundry</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, #9b59b6, #8e44ad);
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header h1 {
+            font-size: 2.8em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #8e44ad;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #9b59b6;
+            border-radius: 5px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 1.8em;
+            color: #8e44ad;
+            border-bottom: 2px solid #9b59b6;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        /* Service List */
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services ul li {
+            background: #f4e1f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #8e44ad;
+        }
+
+        /* Gallery Styles */
+        .images {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .images img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Owner Info */
+        .owner {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .owner img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #9b59b6;
+            margin-bottom: 10px;
+        }
+        .owner h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #f7a7ff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        /* Large Screens (Desktops/Laptops) */
+        @media (min-width: 1024px) {
+            .images img {
+                width: 30%;
+            }
+        }
+
+        /* Medium Screens (Tablets) */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            .images img {
+                width: 45%;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+
+        /* Small Screens (Mobile Phones) */
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+                padding: 10px;
+                text-align: center;
+            }
+            .images img {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            .owner h3 {
+                font-size: 1.3em;
+            }
+            footer {
+                padding: 10px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aniket Laundry</h1>
+        <p>Your Trusted Laundry Partner</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>💧 Wash and Fold - Quick and reliable laundry services.</li>
+                <li>🧼 Dry Cleaning - Professional treatment for your delicate fabrics.</li>
+                <li>🧺 Ironing Services - Crisp and sharp clothes every time.</li>
+            </ul>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Aniket Laundry, established in 1995, has been dedicated to offering reliable and high-quality laundry services for nearly three decades. Since our founding, we have strived to make laundry day easier and more convenient for our customers with advanced techniques, a customer-first approach, and an unwavering commitment to excellence.
+
+                Whether you need wash-and-fold services, dry cleaning, or ironing, Aniket Laundry ensures your clothes receive the care they deserve. We also provide hassle-free pick-up and delivery options for added convenience.
+                
+                Our goal is simple: to provide the best laundry solutions while maintaining a focus on quality, trust, and customer satisfaction.</p>
+            <p><strong>Opening Hours:</strong></p>
+            <ul>
+                <li><strong>Morning:</strong> 8:00 AM - 1:00 PM</li>
+                <li><strong>Evening:</strong> 4:00 PM - 9:00 PM</li>
+            </ul>
+            <p><strong>Weekly Holiday:</strong> Tuesday</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Name:</strong> Mr. Dattatray Suryawanshi</p>
+            <p><strong>Phone Number:</strong> 9028702871</p>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="owner">
+                <img src="image/owner.jpg" alt="Owner of FreshClean Laundry">
+                <h4>Owner & Founder</h4>
+                <h3>Mr. Dattatray Suryawanshi</h3>
+                <p>Aniket Laundry</p>
+            </div>
+            <div class="images">
+                <img src="image/shop1.jpg" alt="Interior view showing laundry machines and service area at FreshClean Laundry">
+                <img src="image/shop2.jpg" alt="Laundry machines at FreshClean Laundry">
+                <img src="image/shop3.jpg" alt="Pick-up and delivery vehicles of FreshClean Laundry">
+            </div>
+        </section>
+       
+    </div>
+    <footer>
+        <p>&copy; 2024 Aniket Laundry. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
