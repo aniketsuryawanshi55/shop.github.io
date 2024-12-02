@@ -28,10 +28,35 @@
         }
         header h1 {
             font-size: 2.8em;
+            animation: fadeIn 2s ease-in-out;
         }
         header p {
             margin: 10px 0;
             font-size: 1.2em;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
 
         /* Navigation Bar */
@@ -47,10 +72,12 @@
             margin: 0 15px;
             font-size: 16px;
             padding: 5px 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         nav a:hover {
             background-color: #9b59b6;
             border-radius: 5px;
+            transform: scale(1.1);
         }
 
         /* Main Container */
@@ -63,25 +90,19 @@
         /* Section Styles */
         section {
             margin-bottom: 40px;
+            opacity: 0;
+            animation: slideIn 1s ease forwards;
         }
+        section:nth-child(even) {
+            animation-delay: 0.5s;
+        }
+
         section h2 {
             font-size: 1.8em;
             color: #8e44ad;
             border-bottom: 2px solid #9b59b6;
             padding-bottom: 5px;
             display: inline-block;
-        }
-
-        /* Service List */
-        .services ul {
-            list-style: none;
-            padding: 0;
-        }
-        .services ul li {
-            background: #f4e1f1;
-            margin: 10px 0;
-            padding: 10px;
-            border-left: 5px solid #8e44ad;
         }
 
         /* Gallery Styles */
@@ -95,6 +116,11 @@
             width: 30%;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.1);
         }
 
         /* Owner Info */
@@ -108,6 +134,10 @@
             border-radius: 50%;
             border: 3px solid #9b59b6;
             margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+        .owner img:hover {
+            transform: rotate(10deg);
         }
         .owner h3 {
             margin: 10px 0;
@@ -192,12 +222,12 @@
         <h1>Aniket Laundry</h1>
         <p>Your Trusted Laundry Partner</p>
     </header>
-    <nav>
+    <!-- <nav>
         <a href="#services">Services</a>
         <a href="#about">About Us</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-    </nav>
+    </nav> -->
     <div class="container">
         <section id="services" class="services">
             <h2>Our Services</h2>
@@ -209,17 +239,7 @@
         </section>
         <section id="about" class="about">
             <h2>About Us</h2>
-            <p>Aniket Laundry, established in 1995, has been dedicated to offering reliable and high-quality laundry services for nearly three decades. Since our founding, we have strived to make laundry day easier and more convenient for our customers with advanced techniques, a customer-first approach, and an unwavering commitment to excellence.
-
-                Whether you need wash-and-fold services, dry cleaning, or ironing, Aniket Laundry ensures your clothes receive the care they deserve. We also provide hassle-free pick-up and delivery options for added convenience.
-                
-                Our goal is simple: to provide the best laundry solutions while maintaining a focus on quality, trust, and customer satisfaction.</p>
-            <p><strong>Opening Hours:</strong></p>
-            <ul>
-                <li><strong>Morning:</strong> 8:00 AM - 1:00 PM</li>
-                <li><strong>Evening:</strong> 4:00 PM - 9:00 PM</li>
-            </ul>
-            <p><strong>Weekly Holiday:</strong> Tuesday</p>
+            <p>Aniket Laundry, established in 1995, has been dedicated to offering reliable and high-quality laundry services for nearly three decades. Since our founding, we have strived to make laundry day easier and more convenient for our customers with advanced techniques, a customer-first approach, and an unwavering commitment to excellence.</p>
         </section>
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
@@ -240,7 +260,6 @@
                 <img src="image/shop3.jpg" alt="Pick-up and delivery vehicles of FreshClean Laundry">
             </div>
         </section>
-       
     </div>
     <footer>
         <p>&copy; 2024 Aniket Laundry. All rights reserved.</p>
@@ -252,3 +271,4 @@
     </footer>
 </body>
 </html>
+
